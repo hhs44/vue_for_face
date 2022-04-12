@@ -1,7 +1,7 @@
 <script>
-import NavMenu from './navmenu'
+import navmenu from './navmenu'
 
 export default {
-  NavMenu
+  navmenu
 }
 </script>

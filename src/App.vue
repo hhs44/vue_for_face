@@ -1,22 +1,26 @@
 <template>
-  <el-container>
+  <el-container direction="vertical">
     <xheader></xheader>
-    <navmenu></navmenu>
-    <div id="app">
-      <img src="./assets/logo.png">
-      <router-view/>
-    </div>
+    <el-container>
+      <navmenu></navmenu>
+      <el-main>
+        <div id="app">
+          <img src="./assets/logo.png">
+          <router-view/>
+        </div>
+      </el-main>
+    </el-container>
     <el-footer></el-footer>
   </el-container>
 </template>
 
 <script>
 import xheader from './components/header'
-import Navmenu from './components/page/navmenu'
+import navmenu from './components/page/navmenu'
 
 export default {
   name: 'App',
-  components: {Navmenu, xheader}
+  components: {navmenu, xheader}
 }
 </script>
 
