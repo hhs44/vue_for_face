@@ -17,7 +17,7 @@ Vue.filter('text2html', function (str) {
 })
 const routes = [
   {
-    path: '/',
+    path: '/hello',
     component: HelloWorld
   }
 ]
